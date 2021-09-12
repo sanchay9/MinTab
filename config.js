@@ -23,19 +23,19 @@ const ICONS = [
 
 const LIST_ITEMS = [
     {
-        name: "Contests",
+        name: "calendar",
+        link: "https://calendar.google.com/"
+    },
+    {
+        name: "clist",
         link: "https://clist.by/"
     },
     {
-        name: "Arch Linux",
+        name: "archlinux",
         link: "https://archlinux.org/"
     },
     {
-        name: "Hacker News",
+        name: "hackernews",
         link: "https://news.ycombinator.com/"
-    },
-    {
-        name: "r/firefoxcss",
-        link: "https://www.reddit.com/r/firefoxcss/"
     },
 ]
