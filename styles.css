@@ -3,7 +3,7 @@
 
 :root {
     --fgColor   : #ffffff; /* foreground color */
-    --bgColor   : #212121; /* background color */
+    --bgColor   : #1d2021; /* background color */
     --bgFilter  : rgba(0, 0, 0, 0.1); /* background image filter */
     --font      : "FiraCode Nerd Font Mono"; /* custom font */
 }
