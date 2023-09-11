@@ -2,10 +2,19 @@
 /* C U S T O M I Z A T I O N */
 
 :root {
-    --fgColor   : #ffffff; /* foreground color */
-    --bgColor   : #1d2021; /* background color */
-    --bgFilter  : rgba(0, 0, 0, 0.1); /* background image filter */
-    --font      : "FiraCode Nerd Font Mono"; /* custom font */
+    /* Light Mode */
+    --light-fgColor   : #1a1b26;
+    --light-bgColor   : #ffffff;
+    --light-bgFilter  : rgba(0, 0, 0, 0);
+    --light-bgImage   : url("lightbg.png");
+
+    /* Dark Mode */
+    --dark-fgColor   : #a9b1d6;
+    --dark-bgColor   : #1a1b26;
+    --dark-bgFilter  : rgba(0, 0, 0, 0);
+    --dark-bgImage   : url("darkbg.png");
+
+    --font      : "Product Sans";
 }
 
 
@@ -19,7 +28,7 @@
     font-family     : var(--font), Roboto, "DejaVu Sans", sans-serif;
     text-decoration : none;
 
-    transition      : ease-in-out 0.1s; /* speed for animations when hovering/resizing */
+    transition      : ease-in-out 100ms; /* speed for animations when hovering/resizing */
 }
 
 html {
@@ -29,8 +38,7 @@ html {
 body {
     color           : var(--fgColor);
     background-color: var(--bgColor);
-    background-image: linear-gradient(var(--bgFilter), var(--bgFilter)),
-    url("bg.jpg");
+    background-image: linear-gradient(var(--bgFilter), var(--bgFilter)), var(--bgImage);
     background-size : cover;
 
     height          : 100vh;
@@ -90,8 +98,8 @@ a {
 
 #quote {
     margin-bottom   : 8px;
-    color : #E0E0E0;
 }
+
 #quoteAuthor {
     opacity         : 50%;
 }
