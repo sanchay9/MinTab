@@ -1,162 +1,163 @@
-
 /* C U S T O M I Z A T I O N */
 
 :root {
     /* Light Mode */
-    --light-fgColor   : #1a1b26;
-    --light-bgColor   : #ffffff;
-    --light-bgFilter  : rgba(0, 0, 0, 0);
-    --light-bgImage   : url("lightbg.png");
+    --light-fgColor: #1a1b26;
+    --light-bgColor: #ffffff;
+    --light-bgFilter: rgba(0, 0, 0, 0);
+    --light-bgImage: url("lightbg.png");
 
     /* Dark Mode */
-    --dark-fgColor   : #a9b1d6;
-    --dark-bgColor   : #1a1b26;
-    --dark-bgFilter  : rgba(0, 0, 0, 0);
-    --dark-bgImage   : url("darkbg.png");
+    --dark-fgColor: #a9b1d6;
+    --dark-bgColor: #1a1b26;
+    --dark-bgFilter: rgba(0, 0, 0, 0);
+    --dark-bgImage: url("darkbg.png");
 
-    --font      : "Product Sans";
+    --font: "Product Sans";
 }
 
 
 /*============================================================================*/
 
 * {
-    margin          : 0;
-    padding         : 0;
-    outline         : none;
+    margin: 0;
+    padding: 0;
+    outline: none;
 
-    font-family     : var(--font), Roboto, "DejaVu Sans", sans-serif;
-    text-decoration : none;
+    font-family: var(--font), Roboto, "DejaVu Sans", sans-serif;
+    text-decoration: none;
 
-    transition      : ease-in-out 100ms; /* speed for animations when hovering/resizing */
+    transition: ease-in-out 100ms;
+    /* speed for animations when hovering/resizing */
 }
 
 html {
-    font-size       : 16px;
+    font-size: 16px;
 }
 
 body {
-    color           : var(--fgColor);
+    color: var(--fgColor);
     background-color: var(--bgColor);
     background-image: linear-gradient(var(--bgFilter), var(--bgFilter)), var(--bgImage);
-    background-size : cover;
+    background-size: cover;
 
-    height          : 100vh;
-    width           : 100vw;
+    height: 100vh;
+    width: 100vw;
 
-    display         : flex;
-    flex-flow       : column;
-    justify-content : space-between;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
 }
 
 a {
-    color           : inherit;
+    color: inherit;
 }
 
 .container {
-    display         : flex;
+    display: flex;
 }
 
 .bigContainer {
-    padding         : 48px 92px;
+    padding: 48px 92px;
 }
 
 #middleContainer {
-    flex-flow       : row nowrap;
+    flex-flow: row nowrap;
 }
 
 #iconsContainer {
-    flex-flow       : column;
-    justify-content : center;
-    align-items     : center;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .icon {
-    margin          : 4px;
-    margin-right    : 48px;
-    opacity         : 50%;
-    font-size       : 2rem;
+    margin: 4px;
+    margin-right: 48px;
+    opacity: 50%;
+    font-size: 2rem;
 }
 
 #infoContainer {
-    flex-flow       : column;
-    align-items     : start;
-    justify-content : center;
-    max-width       : 480px;
+    flex-flow: column;
+    align-items: start;
+    justify-content: center;
+    max-width: 480px;
 }
 
 #currentTime {
-    font-size       : 5rem;
-    font-weight     : 700;
-    margin-top      : -16px;
+    font-size: 5rem;
+    font-weight: 700;
+    margin-top: -16px;
 }
 
 #currentDate {
-    font-size       : 1.5rem;
-    margin-bottom   : 16px;
+    font-size: 1.5rem;
+    margin-bottom: 16px;
 }
 
 #quote {
-    margin-bottom   : 8px;
+    margin-bottom: 8px;
 }
 
 #quoteAuthor {
-    opacity         : 50%;
+    opacity: 50%;
 }
 
 #listContainer {
-    flex-flow       : row wrap;
+    flex-flow: row wrap;
 }
 
 .listItem {
-    font-size       : 1.1rem;
-    opacity         : 50%;
-    margin-right    : 24px;
+    font-size: 1.1rem;
+    opacity: 50%;
+    margin-right: 24px;
 }
 
 .icon:hover,
 .icon:focus,
 .listItem:hover,
 .listItem:focus {
-    opacity         : 100%;
+    opacity: 100%;
 }
 
 @media only screen and (max-width: 30rem) {
     html {
-        font-size       : 16px;
+        font-size: 16px;
     }
+
     body {
-        justify-content : flex-start;
+        justify-content: flex-start;
     }
 
     .bigContainer {
-        padding         : 24px 48px;
+        padding: 24px 48px;
     }
 
     #middleContainer {
-        flex-flow       : column wrap;
+        flex-flow: column wrap;
     }
 
     #iconsContainer {
-        flex-flow       : row wrap;
-        justify-content : flex-start;
-        align-items     : flex-start;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
     }
 
     .icon {
-        margin          : 16px;
+        margin: 16px;
     }
 
     .icon:last-of-type {
-        margin-bottom   : 48px;
+        margin-bottom: 48px;
     }
 
     #listContainer {
-        flex-flow       : column nowrap;
+        flex-flow: column nowrap;
     }
 
     .listItem {
-        margin          : 0;
-        margin-bottom   : 16px;
+        margin: 0;
+        margin-bottom: 16px;
     }
 }
